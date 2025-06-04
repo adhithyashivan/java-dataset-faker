@@ -1,0 +1,24 @@
+# FakerDataGenerator Configuration
+
+output:
+  folderName: "java_libraries" # Name of the output folder for CSV files
+
+generation:
+  userNamesCount: 25          # Number of unique user names to generate for the USER_NAMES list
+  uniqueCrs: 22               # Number of unique Change Requests (CR_Main.csv)
+  uniqueJiras: 72             # Number of unique JIRA issues (JIRA_Issues_Detailed.csv)
+  confluencePages: 23         # Number of Confluence pages (Confluence_Pages_Detailed.csv)
+  crCtasks: 18                # Number of CR CTasks (CR_CTasks.csv)
+  jiraActivities: 35          # Number of JIRA activities (JIRA_Activities.csv)
+
+# Optional: Define date ranges here if you want them to be configurable
+# dateRanges:
+#   crMain:
+#     overallStartDateMin: "2023-01-01"
+#     overallStartDateMax: "2024-03-01"
+#   jiraIssues:
+#     createdDateMin: "2023-01-01"
+#     createdDateMax: "2024-04-01"
+#   confluencePages:
+#     createdDateMin: "2023-01-01"
+#     createdDateMax: "2024-05-01"
